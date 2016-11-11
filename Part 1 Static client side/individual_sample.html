@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Individual Result</title>
+		<link href="individual_result.css"  rel="stylesheet" type="text/css"/>
+		<link href="common.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<!-- In head part, use tow metas.
+		One for characters, another for resizing the site when change to small size screen. 
+		Insert commons.css file and individual_result.css file to control style for this page.
+		Also give this page a title.-->
+	<body>
+		<header>
+			<h1>Search Your Restaurant</h1>
+			<div class ="log">
+				<a href="#login"><strong>Log in</strong></a>
+				/
+				<a href="registration.html"><strong>Sign Up</strong></a>
+			</div>
+			<!-- Create the header for this page, Post Restaurant.
+			 Also create log in and sign up links, while login is a sample link and sign up links to the registration.html page. -->
+		</header>
+		<div class = "menu">
+				<ul class="header_list" >
+                  <li><a href="#home"><strong>Home</strong></a></li>
+                  <li><a href="search.html"><strong>Search</strong></a></li>
+                  <li><a href="submission.html"><strong>Post</strong></a></li>
+                  <li><a href="#contact"><strong>Contact us</strong></a></li>
+                </ul>
+		</div>
+		<!-- This part will create a navigation bar. 
+			 There are four links here in a list. One to website home page, which is a sample link.
+			 The second one connects with search.html page.
+			 The third one connet to submission.html.
+			 The last link is contact us, which is a sample link. -->
+		<div class="individual_result">
+			<div class ="map">
+				<img src="MrGao_on_Map.png" alt="Mr.Gao loacation on google map need future improvments">
+			</div>
+			<!-- insert an image of google map screen shot of the sample restaurant just for project1.
+				 In followed project, there will be replaced by a real dynamic map.-->
+			<div class="restaurant">
+				<h2>Mr.Gao China Restaurant</h2>
+					<h3 class = "post_user"> Posted by User_A </h3>
+					<!-- user who posted the object -->
+					<h4 class = "post_date"> Post Date </h4>
+					<!-- object posted date -->
+					<p class = "description"> A very popular Chinese food restaurant in Hamilton.
+					Clean, delicious, fast, polite service, and affordable price. Very close to 
+					McMaster University.</p>
+					<!-- description of the object (restaurant) -->
+					<div class="center_picture">
+						<img src="Mr_Gao.png" alt ="picture of Mr.Gao restaurant">
+					</div>
+					<!-- user uploaded picture of the object 
+					only one for the sample result-->
+					<p> Likes: +1024</p>
+					<!-- rating system with a sample value -->
+					<form class = "like_rating">
+					<!-- insert html form element
+					     planed to create the rating system 
+						 each user has one chance to click like or dislike. 
+						 Like will casue the likes rating +1, dislike will cause the likes rating -1.-->
+						<input type="submit" class ="button" value="Like" >
+						<!-- submit button with like string on the button.-->
+						<input type="submit" class ="button" value="Dislike" >
+						<!-- submit button with dislike string on the button.-->
+					</form>
+			</div>
+			
+			<div class ="user_review">
+			<!-- area to show the previous reviews of other users -->
+				<div class ="review">
+					<h3 class = "review_user"> <label for="review1">Posted by User_B </label></h3>
+					<!-- user who posted the review
+					user name is the label of the textarea-->
+					<h4 class = "review_date"> Post Date </h4>
+					<!-- review posted date -->
+					<textarea  id="review1" readonly>Best Chinese Restaurant in Hamilton. I like it!</textarea>
+					<!-- sample reviews in textarea -->
+				</div>
+				
+				<div class ="review">
+					<h3 class = "review_user"> <label for="review2">Posted by User_C</label></h3>
+					<!-- user who posted the review
+					user name is the label of the textarea-->
+					<h4 class = "review_date"> Post Date </h4>
+					<!-- review posted date -->
+					<textarea  id="review2" readonly>Probably the most authentic Chinese food in Hamilton. Their specialty seems to be spicy food.</textarea>
+					<!-- sample reviews in textarea -->
+				</div>
+			</div>
+			
+			<div class ="comment">
+			<!-- area let user to leave own review comment 
+			     User need to log in first, then they can leave valid review-->
+				<form>
+					<label for="user_name">User Name:</label><br/> 
+					<input type ="text" id="user_name" class= "type_input" name="UserName" placeholder="User Name"/><br/>
+					<!-- use text type input create a input bar allows typing user name to log in
+					Give it id, label, and a place holder to leave message to user 
+					should disappear if user already log in-->
+					<label for="password">Password : </label><br/>
+					<input type="password" id="password" class= "type_input" name="Password" placeholder="Password"><br>
+					<!-- use password type input to create a entering bar allows typing user account password to log in.
+					Give it id, label, and a place holder to leave message to user 
+					The input while be hidden in the typing bar.
+					Should disappear if user already log in -->
+					<label for="give_comment">Comment:</label><br/>
+					<textarea id="give_comment" placeholder="Leave your comment."></textarea>
+					<!-- Use textarea to let user enter sentences or paragraphs of their reviews.
+					   Give specifice label and leave message to user by placeholder-->
+					<br>
+					<input type="submit" class ="button" value="Submit" >
+					<!-- submit button with submit string on the button.-->
+				</form>
+			</div>
+		</div>
+	 <footer>
+		<a href ="#top">Back to top of page</a>
+	 </footer>
+	 <!-- footer part of the page. It has a link can back to top of the page -->
+	</body>
+</html>

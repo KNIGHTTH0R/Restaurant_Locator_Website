@@ -1,0 +1,97 @@
+/*This is the style sheet for search.html*/
+.search_structure{
+	padding: 50px;
+	margin-top: 40px;
+	text-align:center;
+	background-color:white;
+	margin-bottom:50px;
+	/*
+	use padding and margin space to make the search bar at relatively center part of webpage vertically,
+	text-align to make the content horizontally middle of the page
+	margin bottom to prevent overlap with footer*/
+
+}
+
+.search_by_name input[type=search]{
+	width:300px;
+	border:2px solid #ccc;
+	border-radius:4px;
+	font-size:20px;
+	background-color:white;
+	background-position:10px 10px;
+	
+	/*
+	for all search type input in search_by_name
+	make the bar width to 300px,
+	give it solid border, and border radius as 4px.
+	make the text bigger
+	*/
+}
+
+.search_by_name{
+	padding:50px;
+	/* creat some space, try to move the search bar to middle of the page */
+}
+.search_by_type{
+	padding:50px;
+	/* creat some space, try to move the dropdown box to middle of the page */
+}
+.search_by_type select{
+	width:300px;
+	font-size:20px;
+	border:2px solid #ccc;
+	border-radius:4px;
+	/*
+	for all select in search_by_type
+	make width to 300px, 
+	bigger text,
+	give it solid border, and border radius as 4px.
+	*/
+}
+
+.button{
+	padding: 10px;
+	width: 100px;
+	font-size:16px;
+	/*
+	make the button bigger
+	*/
+}
+
+@media only screen and (max-width: 500px){
+
+/*
+Styles in this block only triggered when the screen size is less than 500px, especially for the mobile devices
+*/
+	.search_structure{
+	text-align:left;
+	padding: 0px;
+	margin-left: 0%;
+	margin-right:0%;
+	/*
+	make the content of seach strucuture to the left-side, clear padding space and margin space at left and right
+	*/
+	}
+	
+	.search_by_name{
+		padding:0px;
+		padding-bottom:10px;
+		/* cleaning the padding for search_by_name area, create a smaller gap to top*/
+	}
+	
+	.search_by_type{
+		padding:0px;
+		padding-bottom:10px
+		/* cleaning the padding for search_by_type area, create a smaller gap to top*/
+	}
+
+	.button{
+		display:block;
+		width:100%;
+		margin-bottom:10px;
+		margin-top:10px;
+		/* make the button display as block
+		make button wider for easily clicking
+		create some space to top and bottom.*/
+	}
+}

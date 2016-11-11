@@ -1,0 +1,34 @@
+/*This is the style sheet for results_sample.html*/
+.map img{
+	width:100%;
+	margin-top:10px;
+	/*control the size of the map,
+	  make a space at bottom */
+}
+table{
+	margin-top:10px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:50px;
+	border:solid;
+	/*
+	make table at middle of the page.
+	create border for the outside,
+	create margin at bottom to prevent overlap with footer.
+	*/
+}
+table th{
+	border:solid;
+	border-width:0.5px;
+	/*
+	give border for the inner part of table.
+	*/
+}
+
+@media only screen and (max-width: 500px){
+/*
+Styles in this block only triggered when the screen size is less than 500px, especially for the mobile devices
+nothing need to change in this page.
+*/
+	
+}

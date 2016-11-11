@@ -1,0 +1,90 @@
+/*This is the style sheet for submission.html*/
+.post_object form{
+	text-align:center;
+	margin-top:30px;
+	/*
+	make all text at the center, create margin space to bottom
+	*/
+}
+.post_object input[type=text]{
+	width:300px;
+	border:2px solid #ccc;
+	border-radius:4px;
+	font-size:20px;
+	margin-bottom:10px;
+	/*
+	for all text type input, 
+	make the bar width to 300px,
+	give it solid border, and border radius as 4px.
+	make the text bigger
+	*/
+}
+
+textarea{
+	border:2px solid #ccc;
+	border-radius:4px;
+	margin-bottom:10px;
+	max-width:100%;
+	width:400px;
+	height:100px;
+	font-size:18px;
+	/*
+	give the textarea solid border, and border radius 4px
+	make margin space to bottom 10px
+	limit the max width to same size as page to prevent unexpected changes due to screen changes
+	make the width to 400px, height to 100px
+	make the font bigger
+	*/
+}
+.post_object{
+	margin-bottom:50px;
+	/* give the bottom 50px margin space to prevent overlap with footer*/
+}
+
+.button{
+	padding: 10px;
+	width: 100px;
+	font-size:16px;
+	/* make button bigger and easy to click */
+}
+.img_files{
+	font-size:20px;
+	margin-bottom:10px;
+	max-width:100%;
+	/* make the upload file button bigger and easy to click 
+	   and make space at bottom*/
+}
+.box{
+	width:20px;
+	height:20px;
+	margin-bottom:10px;
+	/* make the check box bigger and easy to click 
+	   and make space at bottom*/
+}
+@media only screen and (max-width: 500px){
+/*
+Styles in this block only triggered when the screen size is less than 500px, especially for the mobile devices
+*/
+	.button{
+		display:block;
+		width:100%;
+		margin-bottom:10px;
+		margin-top:10px;	
+		/*
+		make the button to become one block and much bigger to click.
+		create space at bottom and top;
+		*/
+	}
+	textarea{
+		width:300px;
+		/*
+		when at mobile or less size, textarea width become 300px;
+		*/
+	}
+	.post_object form{
+	text-align:left;
+	margin-top:30px;
+	/*put all content to left side
+	and create space at top to make a gap between navigation menu */
+	}
+}

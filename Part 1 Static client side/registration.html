@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Welcome, Sign Here</title>
+		<link href="registration_ver1.css"  rel="stylesheet" type="text/css"/>
+		<link href="common.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<!-- In head part, use tow metas.
+		One for characters, another for resizing the site when change to small size screen. 
+		Insert commons.css file and registration_ver1.css file to control style for this page.
+		Also give this page a title.-->
+	<body>
+		<header>
+			<h1>Sign up</h1>
+		</header>
+		<!-- header part, make the header of the page -->
+		<div class = "menu">
+			<ul class="header_list" >
+			  <li><a href="#home"><strong>Home</strong></a></li>
+			  <li><a href="search.html"><strong>Search</strong></a></li>
+			  <li><a href="submission.html"><strong>Post</strong></a></li>
+			  <li><a href="#contact"><strong>Contact us</strong></a></li>
+			</ul>
+		</div>
+		<!-- This part will create a navigation bar. 
+			 There are four links here in a list. One to website home page, which is a sample link.
+			 The second one connects with search.html page.
+			 The third one connet to submission.html.
+			 The last link is contact us, which is a sample link. -->
+	  <div class="registration_form" >
+		<form>
+		<!-- Start to insert the html form elements-->
+		  <label for ="username">User Name:</label><br/> 
+		  <input type ="text" id="username" class= "type_input" name="UserName" placeholder="User Name"/><br/>
+		  <!-- use text type input to create a entering bar.
+			   Give it id, label, and a place holder to leave message to user -->
+		  <label for="password">Password : </label><br/>
+		  <input type="password" id="password" class= "type_input" name="Password" placeholder="Password"><br/>
+		  <!-- use password type input to create a entering bar.
+			   Give it id, label, and a place holder to leave message to user 
+			   The input while be hidden in the typing bar.-->
+		  <label for="email">Email: </label><br/>
+		  <input type = "email" id="email" class= "type_input"  name = "Email" placeholder="Email"/><br/>
+		  <!-- use email type input to create a entering bar.
+			   Give it id, label, and a place holder to leave message to user.
+			   The typing area will remind user to input an @.-->
+		  <fieldset>
+		  <legend>Gender:</legend>
+			  <label for="male">Male</label>
+			  <input type="radio" name="gender" id="male" value="male" class ="radio">
+			  <label for="female">Female</label>
+			  <input type="radio" name="gender" id="female" value="female" class ="radio"><br/>
+		  </fieldset>
+		  <!-- Use radio type input to let user select their gender.
+			   Contains all radio in one fieldset.
+			   Give the fieldset a legend. -->
+		  <label for="bday">Birthday: </label>
+		  <input type="date"  id="bday" class="type_input" name ="birthday"><br/>
+		  <!-- use date type input to create a bar which allows user typing their birthday or select from calendar.
+			   Give it id and label-->
+			What kinds of restaurant do you like?<br/>
+			  <input type="checkbox" id="fastfood" class ="box" name = "FastFood" value="FastFood"/> 
+			  <label for="fastfood">FastFood</label>
+			  <input type="checkbox" id="west" class ="box" name = "Western" value="Western"/> 
+			  <label for="west">Western</label>
+			  <input type="checkbox" id="chinese" class ="box" name = "Chinese" value="Chinese"/> 
+			  <label for="chinese">Chinese</label>
+			  <input type="checkbox" id= "buffet" class ="box" name = "Buffet" value="Buffet"/> 
+			  <label for="buffet">Buffet</label>
+			  <br/>
+			  <input type="checkbox" id="expensive" class ="box" name = "Expensive" value="Expensive"/> 
+			  <label for="expensive">Expensive</label>
+			  <input type="checkbox" id="cheap" class ="box" name = "Cheap" value="Cheap"/> 
+			  <label for="cheap"> Cheap </label>
+			  <!-- Use checkbox type input to let user select one or more type for the restaurant.
+					   What is the restaurant style.
+					   Is the restaurant cheap or expensive.
+					   Each one has own label, class, id, value. -->
+			  <br/>
+			  <input type="submit" class ="button" value="Submit">
+			  <!-- submit button with submit string on the button.-->
+			  <input type="button" class ="button" value ="Cancel" onclick="history.go(-1);return true;">
+			  <!-- button type input with create a cancel button allows user back to previous page-->
+		</form>
+	  </div>
+    <footer>
+	 <a href ="#top">Back to top of page</a>
+	</footer>
+	<!-- footer part of the page. It has a link can back to top of the page -->
+</body>
+	
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Search Results</title>
+		<link href="results_ver1.css"  rel="stylesheet" type="text/css"/>
+		<link href="common.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<!-- In head part, use tow metas.
+		One for characters, another for resizing the site when change to small size screen. 
+		Insert commons.css file and result_ver1.css file to control style for this page.
+		Also give this page a title.-->
+	<body>
+		<header>
+			<h1>Results</h1>
+			<div class ="log">
+				<a href="#login"><strong>Log in</strong></a>
+				/
+				<a href="registration.html"><strong>Sign Up</strong></a>
+			</div>
+		</header>
+		<!-- Create the header for this page, Post Restaurant.
+			 Also create log in and sign up links, while login is a sample link and sign up links to the registration.html page. -->
+		<div class = "menu">
+			<ul class="header_list" >
+			  <li><a href="#home"><strong>Home</strong></a></li>
+			  <li><a href="search.html"><strong>Search</strong></a></li>
+			  <li><a href="submission.html"><strong>Post</strong></a></li>
+			  <li><a href="#contact"><strong>Contact us</strong></a></li>
+			</ul>
+		</div>
+		<!-- This part will create a navigation bar. 
+			 There are four links here in a list. One to website home page, which is a sample link.
+			 The second one connects with search.html page.
+			 The third one connet to submission.html.
+			 The last link is contact us, which is a sample link. -->
+		
+		<div class = "result_list">
+			<div class= "map">
+				<img src="GoogleMap.png" alt="Big Map need future improvments">
+			</div>
+			<!-- insert an image of google map screen shot just for project1.
+				 In followed project, there will be replaced by a real dynamic map.-->
+			<div class ="table">
+				<table>
+					<tr id="general_infomation">
+						<th id="name">Restaurant Name</th>
+						<th id="type">Type</th>
+						<th id="rates">Likes</th>
+						<th id="links"></th>
+					</tr>
+					<tr id="sample1">
+						<th id="sample1_name">Mr.Gao</th>
+						<th id="sample1_type">Chinese</th>
+						<th id="sample1_rates">1024</th>
+						<th id="sample1_links"><a href="individual_sample.html">details</a></th>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!-- There use table tag to create a sample result table.
+		4 cols in total and represent restaurant name, type, rating and link respectively.
+		First row is the title.
+		Second row is the sample result. -->
+	
+		<footer>
+		 <a href ="#top">Back to top of page</a>
+		</footer>
+		<!-- footer part of the page. It has a link can back to top of the page -->
+	</body>
+	
+	
+</html>

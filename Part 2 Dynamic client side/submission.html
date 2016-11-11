@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Post your Object</title>
+		<link href="common.css" rel="stylesheet" type="text/css"/>
+		<link href="submission.css" rel="stylesheet" type="text/css"/>
+		<script src="getlocation.js"></script>
+	</head>
+	<!-- In head part, use tow metas.
+		One for characters, another for resizing the site when change to small size screen. 
+		Insert commons.css file and submission.css file to control style for this page
+		Insert getlocaiton.js for using geolocation API.
+		Also give this page a title.-->
+	<body>
+		<header>
+			<h1>Post Restaurant</h1>
+			<div class ="log">
+				<a href="#login"><strong>Log in</strong></a>
+				/
+				<a href="registration.html"><strong>Sign Up</strong></a>
+			</div>
+		</header>
+		<!-- Create the header for this page, Post Restaurant.
+			 Also create log in and sign up links, while login is a sample link and sign up links to the registration.html page. -->
+		<div class = "menu">
+				<ul class="header_list" >
+                  <li><a href="#home"><strong>Home</strong></a></li>
+                  <li><a href="search.html"><strong>Search</strong></a></li>
+                  <li><a class="current_page" href="submission.html"><strong>Post</strong></a></li>
+                  <li><a href="#contact"><strong>Contact us</strong></a></li>
+                </ul>
+		</div>
+		<!-- This part will create a navigation bar. 
+			 There are four links here in a list. One to website home page, which is a sample link.
+			 The second one connects with search.html page.
+			 The third one connet to submission.html which is the current page. 
+			 Hence, give it class to identify the current page in navigation bar.
+			 The last link is contact us, which is a sample link. -->
+		
+		<div class="post_object">
+			<form>
+			<!-- Start to insert the html form elements-->
+				  <label for="restaurant_name">Restaurant Name:</label><br/>
+				  <input type ="text" id="restaurant_name" class= "type_input" name="Restaurant_Name" placeholder="Restaurant Name" required /><br/>
+				  <label for="location">Location:</label><br/>
+				  <input type ="text" id="setlocation" class= "type_input" name="Restaurant_Location" placeholder="Location Ex 43.2573166,-79.929775" pattern="^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?),\s*[-+]?(180(\.0+)?|((1[0-7]\d)|([1-9]?\d))(\.\d+)?)$" required /><br/>
+				  <input type="button" id="update_location" class="button" value ="Current Location" onclick="updateLocation()">
+				  <br/><!-- There is a button can quickly get user's location by geolocation api and upload into location input field.
+							Easy for user to input location value when they are insdie the restaurant.-->
+				  <label for="address">Address:</label><br/>
+				  <input type ="text" id="address" class= "type_input" name="Restaurant_Address" placeholder="Restaurant_Address (Optional)"/><br/>
+				  <!-- Use text type input to let user enter restaurant name, latitude-longitude location, and address.
+					   Each havetheir own label, class,id value. They also hold information by placeholder.
+					   Restaurant_Name and location are required, they can't be empty-->
+					   
+				  Type of the restaurant:<br/>
+				  <input type="checkbox" id="fastfood" class ="box" name = "FastFood" value="FastFood"/> 
+				  <label for="fastfood">FastFood</label>
+				  <input type="checkbox" id="west" class ="box" name = "Western" value="Western"/> 
+				  <label for="west">Western</label>
+				  <input type="checkbox" id="chinese" class ="box" name = "Chinese" value="Chinese"/> 
+				  <label for="chinese">Chinese</label>
+				  <input type="checkbox" id= "buffet" class ="box" name = "Buffet" value="Buffet"/> 
+				  <label for="buffet">Buffet</label>
+				  <br/>
+				  <input type="checkbox" id="expensive" class ="box" name = "Expensive" value="Expensive"/> 
+				  <label for="expensive">Expensive</label>
+				  <input type="checkbox" id="cheap" class ="box" name = "Cheap" value="Cheap"/> 
+				  <label for="cheap"> Cheap </label> 
+				  <span>(Optional, can choose one or more)</span>
+				  <br/>
+				  <!-- Use checkbox type input to let user select one or more type for the restaurant.
+					   What is the restaurant style.
+					   Is the restaurant cheap or expensive.
+					   Each one has own label, class, id, value. -->
+				  <label for ="description">Description:</label><br/>
+				  <textarea id="description" placeholder="Describe the restaurant" required ></textarea><br/>
+				  <!-- Use textarea to let user enter sentences or paragraphs they want to describe the restaurant.
+					   Give specifice label and leave message to user by placeholder
+					   It require input, cannot be empty-->
+				  <label for ="load_image">Upload one or more images:</label><br/><span>(Optional)</span>
+				  <input type="file" id="load_image" class="img_files" name="myImage" accept="image/*" multiple><br/>
+				  <!-- use file type input to let user upload image to website.
+					   Only accept image files includes .png .jpg etc.
+					   Allow user to upload mutiple files at same time.-->
+				  <input type="submit" class ="button" value="Submit" >
+				  <!-- submit button with submit string on the button.-->
+			</form>
+		</div>
+		
+		<footer>
+			<a href ="#top">Back to top of page</a>
+		</footer>
+		<!-- footer part of the page. It has a link can back to top of the page -->
+		
+	</body>
+</html>
