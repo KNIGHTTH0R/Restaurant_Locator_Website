@@ -1,0 +1,109 @@
+/*This is the style sheet for individual_result.html*/
+#map {
+	height: 400px;
+	width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
+	/*
+	limit the size of living map
+	create margin at top and bottom.
+	*/
+}
+.restaurant{
+	border-style:solid;
+	border-width:0.5px;
+	/*
+	give restaurant area border to separate it from map and reviews
+	*/
+}
+.restaurant h2{
+	text-align:center;
+	/* make the restaurant name at center */
+}
+.center_picture{
+	text-align:center;
+	/*make the picture at center*/
+}
+.center_picture img{
+	display:inline-block;
+	max-width:100%;
+	/*make the picture display as inline block
+	  limit the size */
+}
+.like_rating{
+	margin-bottom:10px;
+	/* creat bottom space*/
+}
+.button{
+	padding: 10px;
+	width: 100px;
+	font-size:16px;
+	/*
+	make the button bigger
+	*/
+}
+
+.review{
+	border-top-style:solid;
+	border-top-width:0.5px;
+	margin-top:10px;
+	/*
+	make a border at bottom of each review to separate them
+	and create a space at bottom
+	*/
+}
+textarea{
+	width:400px;
+	height:100px;
+	border:2px solid #ccc;
+	border-radius:4px;
+	max-width:100%;
+	margin-bottom:10px;
+	font-size:18px;
+	/*
+	give the textarea solid border, and border radius 4px
+	make margin space to bottom 10px
+	limit the max width to same size as page to prevent unexpected changes due to screen changes
+	make the width to 400px, height to 100px
+	make the font bigger
+	*/
+}
+
+.type_input{
+	margin-bottom:10px;
+	font-size:20px;
+	border:2px solid #ccc;
+	border-radius:4px;
+	
+	/*
+	give the input bar solid border and larger text size
+	*/
+}
+.individual_result{
+	margin-bottom:50px;
+	/*create bottom space for preventing overlap with footer*/
+}
+@media only screen and (max-width: 500px){
+	
+/*
+Styles in this block only triggered when the screen size is less than 500px, especially for the mobile devices
+*/
+	.button{
+		display:block;
+		width:100%;
+		margin-bottom:10px;
+		margin-top:10px;
+		
+	}
+	/*
+		make the button larger and easy to click by user on mobile device.
+		create margin at top and bottom.
+		*/
+	textarea{
+		width:300px;
+		/*
+		when at mobile or less size, textarea width become 300px;
+		*/
+	}
+}
+
